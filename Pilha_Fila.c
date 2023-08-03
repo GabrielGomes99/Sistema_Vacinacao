@@ -50,7 +50,7 @@ void enfileirar(Fila* fila, char nucleotideo) {
 
 void desenfileirar(Fila* fila) {
     if (filaVazia(fila)) {
-        printf("A fila est· vazia.\n");
+        printf("A fila est√° vazia.\n");
         return;
     }
 
@@ -91,7 +91,7 @@ void empilhar(Pilha* pilha, char nucleotideo) {
 
 void desempilhar(Pilha* pilha) {
     if (pilhaVazia(pilha)) {
-        printf("A pilha est· vazia.\n");
+        printf("A pilha est√° vazia.\n");
         return;
     }
 
@@ -114,7 +114,7 @@ int main() {
     int novo = 1;
 
     while (novo) {
-        printf("Digite a sequÍncia de nucleotÌdeos: ");
+        printf("Digite a sequ√™ncia de nucleot√≠deos: ");
         char dna[100];
         scanf("%s", dna);
 
@@ -128,7 +128,7 @@ int main() {
             char nucleotideo = toupper(dna[i]);
 
             if (nucleotideo != 'A' && nucleotideo != 'C' && nucleotideo != 'T' && nucleotideo != 'G') {
-                printf("\nLetra inv·lida! Por favor, digite apenas as letras A, C, T ou G.\n\n");
+                printf("\nLetra inv√°lida! Por favor, digite apenas as letras A, C, T ou G.\n\n");
                 break;
             }
 
